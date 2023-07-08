@@ -93,10 +93,10 @@ scp firmware.bin user@192.168.80.106:/home/user/openocd-spi/tcl/
 
 # Useful Commands
 
-# view logs
-docker logs --follow mowgli-docker-openmower-1 
-# Recreate containers
+- View logs
+docker logs --follow mowgli-docker-openmower-1
+- Recreate containers
 docker compose up -d --force-recreate
-# Get terminal in the openmower container
+- Get terminal in the openmower container
 docker compose exec openmower bash
 
