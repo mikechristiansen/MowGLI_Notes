@@ -96,4 +96,11 @@ scp firmware.bin user@192.168.80.106:/home/user/openocd-spi/tcl/
 - View logs: docker logs --follow mowgli-docker-openmower-1
 - Recreate containers: docker compose up -d --force-recreate
 - Get terminal in the openmower container: docker compose exec openmower bash
+- Change WIFI to 2.4g only.Ive done this to ensure better coverage on my lawn, I was having dropouts with band steering to 5ghz on a unifi network.
+  
+"sudo nano /etc/wpa_supplicant/wpa_supplicant.conf"
+
+freq_list=2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472
+
+
 
