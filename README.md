@@ -103,4 +103,5 @@ scp firmware.bin user@192.168.80.106:/home/user/openocd-spi/tcl/
 freq_list=2412 2417 2422 2427 2432 2437 2442 2447 2452 2457 2462 2467 2472
 
 
-
+- Change GPS usb Baud at ~/mowgli-docker/mower_param/gps_params.yaml (currently set to 921600)
+- Updated the GPS to rate 200 (5hz) from 1hz that the initial robot.cfg file setup. 
